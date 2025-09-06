@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/*For changing the text selection highlight color */
+::selection {
+    background: 
+#05df72; 
+    color: 
+#101828;     
+}
+

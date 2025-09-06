@@ -1,0 +1,20 @@
+/* src/Terminal.css */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor-blink-thick:after {
+    content: '';
+    display: inline-block;
+    width: 0.5rem; /* Adjust thickness */
+    height: 1.2rem; /* Match font height */
+    background-color: #00ff00; /* Cursor color */
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+}
